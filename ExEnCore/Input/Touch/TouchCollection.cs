@@ -6,9 +6,6 @@ namespace Microsoft.Xna.Framework.Input.Touch
 {
 	public struct TouchCollection : IList<TouchLocation>
 	{
-		bool isConnected;
-		public bool IsConnected { get { return isConnected; } }
-
 		public const int MaxTouches = 5;
 		TouchLocation touch0, touch1, touch2, touch3, touch4;
 

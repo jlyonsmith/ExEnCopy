@@ -37,16 +37,6 @@ namespace Microsoft.Xna.Framework
 			Recalculate();
 		}
 		
-		
-		// The Android backing surface is auto-rotated and resized by the operating system,
-		// iOS does not support this (on the fast path on all versions - see ExEnEmTouchGameView.cs)
-		// so we do its rotation for it.
-#if ANDROID
-		private const bool systemHandlesOrientationItself = true;
-#else
-		private const bool systemHandlesOrientationItself = false;
-#endif
-		
 		ExEnInterfaceOrientation orientation;
 		/// <summary>The screen orientation.</summary>
 		public ExEnInterfaceOrientation Orientation
@@ -109,45 +99,45 @@ namespace Microsoft.Xna.Framework
 			FractionTransform2D rotate = FractionTransform2D.Identity;
 			FractionTransform2D inverseRotate = FractionTransform2D.Identity;
 			
-			if(!systemHandlesOrientationItself)
+#if !ANDROID
+			// Setup projection matrix and client size
+			switch(orientation)
 			{
-				// Setup projection matrix and client size
-				switch(orientation)
-				{
-					case ExEnInterfaceOrientation.Portrait:
-						projection = Matrix.Identity;
-						// rotation matrix is identity
-						ClientSize = deviceSize;
-						break;
+				case ExEnInterfaceOrientation.Portrait:
+					projection = Matrix.Identity;
+					// rotation matrix is identity
+					ClientSize = deviceSize;
+					break;
 	
-					case ExEnInterfaceOrientation.PortraitUpsideDown:
-						projection = Matrix.CreateRotationZ(MathHelper.Pi);
-						rotate = inverseRotate = FractionTransform2D.CreateRotation(-1, 0);
-						ClientSize = deviceSize;
-						break;
+				case ExEnInterfaceOrientation.PortraitUpsideDown:
+					projection = Matrix.CreateRotationZ(MathHelper.Pi);
+					rotate = inverseRotate = FractionTransform2D.CreateRotation(-1, 0);
+					ClientSize = deviceSize;
+					break;
 	
-					case ExEnInterfaceOrientation.LandscapeLeft:
-						projection = Matrix.CreateRotationZ(MathHelper.PiOver2);
-						rotate = FractionTransform2D.CreateRotation(0, 1);
-						inverseRotate = FractionTransform2D.CreateRotation(0, -1);
-						ClientSize = new Point(deviceSize.Y, deviceSize.X);
-						break;
+				case ExEnInterfaceOrientation.LandscapeLeft:
+					projection = Matrix.CreateRotationZ(MathHelper.PiOver2);
+					rotate = FractionTransform2D.CreateRotation(0, 1);
+					inverseRotate = FractionTransform2D.CreateRotation(0, -1);
+					ClientSize = new Point(deviceSize.Y, deviceSize.X);
+					break;
 	
-					case ExEnInterfaceOrientation.LandscapeRight:
-						projection = Matrix.CreateRotationZ(3 * MathHelper.PiOver2);
-						rotate = FractionTransform2D.CreateRotation(0, -1);
-						inverseRotate = FractionTransform2D.CreateRotation(0, 1);
-						ClientSize = new Point(deviceSize.Y, deviceSize.X);
-						break;
-				}
+				case ExEnInterfaceOrientation.LandscapeRight:
+					projection = Matrix.CreateRotationZ(3 * MathHelper.PiOver2);
+					rotate = FractionTransform2D.CreateRotation(0, -1);
+					inverseRotate = FractionTransform2D.CreateRotation(0, 1);
+					ClientSize = new Point(deviceSize.Y, deviceSize.X);
+					break;
 			}
-			else
-			{
-				projection = Matrix.Identity;
-				ClientSize = deviceSize;
-			}
+#else
+		    // The Android backing surface is auto-rotated and resized by the operating system,
+		    // iOS does not support this (on the fast path on all versions - see ExEnEmTouchGameView.cs)
+		    // so we do its rotation for it.
+			projection = Matrix.Identity;
+			ClientSize = deviceSize;
+#endif
 
-			// Setup transformation matrices:
+            // Setup transformation matrices:
 			// Orthographic projection into projection space, use orientation projection matrix,
 			// inverse orthographic project back to new client space
 			logicalToRender = FractionTransform2D.CreateOrthographic(0, ClientSize.X, ClientSize.Y, 0)

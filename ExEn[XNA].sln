@@ -1,25 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010 Express for Windows Phone
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlankGame XNA", "BlankGame\BlankGame XNA.csproj", "{70BF37C6-87F7-49F6-8FD9-E813A30501A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlankGame[XNA]", "BlankGame\BlankGame[XNA].csproj", "{70BF37C6-87F7-49F6-8FD9-E813A30501A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marblets XNA", "Samples\Marblets\Marblets XNA.csproj", "{AA65C245-AC6A-48F8-B953-662D0C7BBC32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marblets[XNA]", "Samples\Marblets\Marblets[XNA].csproj", "{AA65C245-AC6A-48F8-B953-662D0C7BBC32}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarbletsContent", "Samples\Marblets\Content\MarbletsContent.contentproj", "{91C4D09C-9B66-46E6-AAFC-7CE6C693D4E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatGirls XNA", "Samples\CatGirls\CatGirls XNA.csproj", "{3BAE3F0E-C490-4C89-961E-457C27C7D444}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatGirls[XNA]", "Samples\CatGirls\CatGirls[XNA].csproj", "{3BAE3F0E-C490-4C89-961E-457C27C7D444}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatGirlsContent", "Samples\CatGirls\Content\CatGirlsContent.contentproj", "{36E270C7-3F54-4015-9A6E-57DC997161D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatGirls WP7", "Samples\CatGirls\CatGirls WP7.csproj", "{6DD69959-8489-4E68-8068-D0051F0B6135}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatGirls WP7", "Samples\CatGirls\CatGirls[WP7].csproj", "{6DD69959-8489-4E68-8068-D0051F0B6135}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExEnFontShim", "ExEnFontShim\ExEnFontShim.csproj", "{BEC8D75B-1BC7-4899-B8C5-58E4B6A64AB1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrientationContent", "Samples\Orientation\OrientationContent.contentproj", "{3E147AEE-9D71-43EE-A709-5F8D0146CEC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orientation XNA", "Samples\Orientation\Orientation XNA.csproj", "{E1EE1370-EB8F-4AAB-934C-FF85AD64709B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orientation[XNA]", "Samples\Orientation\Orientation[XNA].csproj", "{E1EE1370-EB8F-4AAB-934C-FF85AD64709B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orientation WP7", "Samples\Orientation\Orientation WP7.csproj", "{F1E5C82A-FBEA-45F1-89A0-1BA15CB70C7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orientation WP7", "Samples\Orientation\Orientation[WP7].csproj", "{F1E5C82A-FBEA-45F1-89A0-1BA15CB70C7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

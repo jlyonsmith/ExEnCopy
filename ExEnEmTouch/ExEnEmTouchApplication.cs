@@ -10,23 +10,23 @@ namespace Microsoft.Xna.Framework
 	{
 
 		// TODO: make Game register itself automatically!
-		protected Game game = null;
+		protected Game Game = null;
 
 
 		public override void OnResignActivation(UIApplication application)
 		{
 			Console.WriteLine("ExEnEmTouchApplication.OnResignActivation()");
 
-			if(game != null)
-				game.IsActive = false;
+			if(Game != null)
+				Game.IsActive = false;
 		}
 
 		public override void OnActivated(UIApplication application)
 		{
 			Console.WriteLine("ExEnEmTouchApplication.OnActivated()");
 
-			if(game != null)
-				game.IsActive = true;
+			if(Game != null)
+				Game.IsActive = true;
 
 			MediaPlayer.MusicRestartHack();
 		}
@@ -36,24 +36,24 @@ namespace Microsoft.Xna.Framework
 		{
 			Console.WriteLine("ExEnEmTouchApplication.WillTerminate()");
 
-			if(game != null)
-				game.DoTermination();
+			if(Game != null)
+				Game.DoTermination();
 		}
 
 		public override void DidEnterBackground(UIApplication application)
 		{
 			Console.WriteLine("ExEnEmTouchApplication.DidEnterBackground()");
 
-			if(game != null)
-				game.DoEnterBackground();
+			if(Game != null)
+				Game.DoEnterBackground();
 		}
 
 		public override void WillEnterForeground(UIApplication application)
 		{
 			Console.WriteLine("ExEnEmTouchApplication.WillEnterForeground()");
 
-			if(game != null)
-				game.DoEnterForeground();
+			if(Game != null)
+				Game.DoEnterForeground();
 		}
 	}
 }

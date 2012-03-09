@@ -134,14 +134,14 @@ namespace Microsoft.Xna.Framework
 		private void AddUpdateable(IUpdateable item)
 		{
 			updateingList.Add(item);
-			item.UpdateOrderChanged += new EventHandler(ComponentUpdateOrderChanged);
+			item.UpdateOrderChanged += new EventHandler<EventArgs>(ComponentUpdateOrderChanged);
 			updateListDirty = true;
 		}
 
 		private void RemoveUpdateable(IUpdateable item)
 		{
 			updateingList.Remove(item);
-			item.UpdateOrderChanged -= new EventHandler(ComponentUpdateOrderChanged);
+			item.UpdateOrderChanged -= new EventHandler<EventArgs>(ComponentUpdateOrderChanged);
 			updateListDirty = true;
 		}
 

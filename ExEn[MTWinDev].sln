@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C# Express 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlankGame MTWinDev", "BlankGame\BlankGame MTWinDev.csproj", "{E7D2798F-3913-49A7-8455-8901F9CFA8B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlankGame[MTWinDev]", "BlankGame\BlankGame[MTWinDev].csproj", "{E7D2798F-3913-49A7-8455-8901F9CFA8B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExEnCore MTWinDev", "ExEnCore\ExEnCore MTWinDev.csproj", "{EBF8E4F8-A628-484A-8AE1-B69577DE5CC1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExEnCore[MTWinDev]", "ExEnCore\ExEnCore[MTWinDev].csproj", "{EBF8E4F8-A628-484A-8AE1-B69577DE5CC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExEnEmTouch MTWinDev", "ExEnEmTouch\ExEnEmTouch MTWinDev.csproj", "{1C7408DF-F179-4540-B3D0-CE068C27CE1E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExEnEmTouch[MTWinDev]", "ExEnEmTouch\ExEnEmTouch[MTWinDev].csproj", "{1C7408DF-F179-4540-B3D0-CE068C27CE1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marblets MTWinDev", "Samples\Marblets\Marblets MTWinDev.csproj", "{EC65A63E-8EBC-4CCC-B4DA-4818F6BB34E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marblets[MTWinDev]", "Samples\Marblets\Marblets[MTWinDev].csproj", "{EC65A63E-8EBC-4CCC-B4DA-4818F6BB34E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatGirls MTWinDev", "Samples\CatGirls\CatGirls MTWinDev.csproj", "{DF0346BD-6259-41B7-BF42-4318FDDC4CD5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatGirls[MTWinDev]", "Samples\CatGirls\CatGirls[MTWinDev].csproj", "{DF0346BD-6259-41B7-BF42-4318FDDC4CD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orientation MTWinDev", "Samples\Orientation\Orientation MTWinDev.csproj", "{99ABAF66-0B77-409F-8FBF-B1468F5AAAC0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orientation[MTWinDev]", "Samples\Orientation\Orientation[MTWinDev].csproj", "{99ABAF66-0B77-409F-8FBF-B1468F5AAAC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

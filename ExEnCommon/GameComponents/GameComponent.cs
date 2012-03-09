@@ -58,7 +58,7 @@ namespace Microsoft.Xna.Framework
 				EnabledChanged(sender, args);
 		}
 
-		public event EventHandler EnabledChanged;
+		public event EventHandler<EventArgs> EnabledChanged;
 
 		#endregion
 
@@ -85,7 +85,7 @@ namespace Microsoft.Xna.Framework
 				UpdateOrderChanged(sender, args);
 		}
 
-		public event EventHandler UpdateOrderChanged;
+		public event EventHandler<EventArgs> UpdateOrderChanged;
 
 		#endregion
 

@@ -3,21 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{EBF8E4F8-A628-484A-8AE1-B69577DE5CC1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Microsoft.Xna.Framework</RootNamespace>
     <AssemblyName>ExEnCore</AssemblyName>
-    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <StartupObject>
-    </StartupObject>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
-    <OldToolsVersion>3.5</OldToolsVersion>
-    <UpgradeBackupLocation />
-    <TargetFrameworkProfile />
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,39 +32,31 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <NoStdLib>true</NoStdLib>
   </PropertyGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
   <ItemGroup>
     <Reference Include="monotouch, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\MTWinDev References\monotouch.dll</HintPath>
+      <HintPath>..\MTWinDevReferences\monotouch.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\MTWinDev References\mscorlib.dll</HintPath>
+      <HintPath>..\MTWinDevReferences\mscorlib.dll</HintPath>
     </Reference>
     <Reference Include="OpenTK, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\MTWinDev References\OpenTK.dll</HintPath>
+      <HintPath>..\MTWinDevReferences\OpenTK.dll</HintPath>
     </Reference>
     <Reference Include="System, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\MTWinDev References\System.dll</HintPath>
+      <HintPath>..\MTWinDevReferences\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\MTWinDev References\System.Core.dll</HintPath>
+      <HintPath>..\MTWinDevReferences\System.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Xml, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\MTWinDev References\System.Xml.dll</HintPath>
+      <HintPath>..\MTWinDevReferences\System.Xml.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -117,4 +99,5 @@
     <Compile Include="Vector3.cs" />
     <Compile Include="Vector4.cs" />
   </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

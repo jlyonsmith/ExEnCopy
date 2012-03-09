@@ -7,8 +7,8 @@ namespace Microsoft.Xna.Framework
 		bool Enabled { get; }
 		int UpdateOrder { get; }
 
-		event EventHandler EnabledChanged;
-		event EventHandler UpdateOrderChanged;
+		event EventHandler<EventArgs> EnabledChanged;
+		event EventHandler<EventArgs> UpdateOrderChanged;
 
 		void Update(GameTime gameTime);
 	}

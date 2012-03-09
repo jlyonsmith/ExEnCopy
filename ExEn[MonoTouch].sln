@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlankGame-MonoTouch", "BlankGame\BlankGame-MonoTouch.csproj", "{212743BF-5354-4087-A86D-3CBE5F555AB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlankGame[MonoTouch]", "BlankGame\BlankGame[MonoTouch].csproj", "{212743BF-5354-4087-A86D-3CBE5F555AB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExEnCore MonoTouch", "ExEnCore\ExEnCore MonoTouch.csproj", "{4740C1D7-5EE0-43AC-A862-45B8D245FC43}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExEnCore[MonoTouch]", "ExEnCore\ExEnCore[MonoTouch].csproj", "{4740C1D7-5EE0-43AC-A862-45B8D245FC43}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExEnEmTouch", "ExEnEmTouch\ExEnEmTouch.csproj", "{F7E52764-6042-4D0D-AAB6-E7938B88B93D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marblets-MonoTouch", "Samples\Marblets\Marblets-MonoTouch.csproj", "{C785255B-CF8B-424D-9360-02C314761EF4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marblets[MonoTouch]", "Samples\Marblets\Marblets[MonoTouch].csproj", "{C785255B-CF8B-424D-9360-02C314761EF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatGirls-MonoTouch", "Samples\CatGirls\CatGirls-MonoTouch.csproj", "{C97ACCC8-1172-4146-BC53-A67E9804F095}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatGirls[MonoTouch]", "Samples\CatGirls\CatGirls[MonoTouch].csproj", "{C97ACCC8-1172-4146-BC53-A67E9804F095}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orientation-MonoTouch", "Samples\Orientation\Orientation-MonoTouch.csproj", "{07D81CC3-BE12-4E15-BEDF-C7BAC8275B41}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orientation[MonoTouch]", "Samples\Orientation\Orientation[MonoTouch].csproj", "{07D81CC3-BE12-4E15-BEDF-C7BAC8275B41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -74,7 +74,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Samples\CatGirls\CatGirls-MonoTouch.csproj
+		StartupItem = Samples\CatGirls\CatGirls[MonoTouch].csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
 		$1.TabWidth = 4

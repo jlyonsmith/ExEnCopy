@@ -87,9 +87,9 @@ namespace Microsoft.Xna.Framework.Input
 
 		#region XNA Interface
 
-		public KeyboardState(params Keys[] keys)
-		{
-			keys0 = 0;
+        public KeyboardState(params Keys[] keys)
+        {
+            keys0 = 0;
 			keys1 = 0;
 			keys2 = 0;
 			keys3 = 0;
@@ -163,7 +163,7 @@ namespace Microsoft.Xna.Framework.Input
 		#endregion
 
 
-		#region Objet and Equality
+		#region Object and Equality
 
 		public override int GetHashCode()
 		{
