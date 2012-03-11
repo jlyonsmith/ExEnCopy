@@ -56,11 +56,11 @@
     <Compile Include="TutorialGameBoard.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\ExEnCore\ExEnCore MTWinDev.csproj">
+    <ProjectReference Include="..\..\ExEnCore\ExEnCore[MTWinDev].csproj">
       <Project>{EBF8E4F8-A628-484A-8AE1-B69577DE5CC1}</Project>
       <Name>ExEnCore MTWinDev</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\ExEnEmTouch\ExEnEmTouch MTWinDev.csproj">
+    <ProjectReference Include="..\..\ExEnEmTouch\ExEnEmTouch[MTWinDev].csproj">
       <Project>{1C7408DF-F179-4540-B3D0-CE068C27CE1E}</Project>
       <Name>ExEnEmTouch MTWinDev</Name>
     </ProjectReference>

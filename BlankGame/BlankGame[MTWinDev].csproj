@@ -23,7 +23,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\MTWinDev\Debug\</OutputPath>
-	<BaseIntermediateOutputPath>obj\MTWinDev\</BaseIntermediateOutputPath>
+    <BaseIntermediateOutputPath>obj\MTWinDev\</BaseIntermediateOutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -33,7 +33,7 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\MTWinDev\Release\</OutputPath>
-	<BaseIntermediateOutputPath>obj\MTWinDev\</BaseIntermediateOutputPath>
+    <BaseIntermediateOutputPath>obj\MTWinDev\</BaseIntermediateOutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -66,18 +66,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MonoTouch Program.cs" />
+    <Compile Include="MonoTouchProgram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BlankGame.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExEnCore\ExEnCore MTWinDev.csproj">
+    <ProjectReference Include="..\ExEnCore\ExEnCore[MTWinDev].csproj">
       <Project>{EBF8E4F8-A628-484A-8AE1-B69577DE5CC1}</Project>
       <Name>ExEnCore MTWinDev</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ExEnEmTouch\ExEnEmTouch MTWinDev.csproj">
+    <ProjectReference Include="..\ExEnEmTouch\ExEnEmTouch[MTWinDev].csproj">
       <Project>{1C7408DF-F179-4540-B3D0-CE068C27CE1E}</Project>
       <Name>ExEnEmTouch MTWinDev</Name>
     </ProjectReference>
